@@ -1,0 +1,202 @@
+/* https://colorhunt.co/palette/207331 */
+
+body {
+    background-color: #383838;
+    font-family: 'Muli';
+}
+
+/* div */
+div.header_div {
+    background-color: #1d2d50;
+    height: 100px;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: i;
+    border-bottom: 5px solid #fcdab7;
+    box-shadow: 0px 4px 20px -6px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+div.logo_div {
+    margin-top: -70px;
+    width: 170px;
+    height: min-content;
+    margin-left: 50px;
+}
+
+div.nav {
+    width: 370px;
+    margin-top: -30px;
+    margin-left: 1400px;
+    padding-left: 0px;
+}
+
+div.body_div {
+    margin-right: auto;
+    margin-top: 130px;
+    margin-left: 50px;
+    width: 1150px;
+    min-height: 50px;
+}
+
+div.right_div {
+    width: 500px;
+    height: min-content;
+    float: right;
+    margin-right: 50px;
+    margin-top: -320px;
+}
+
+.container { 
+    width: 1550px; 
+    height:190px; 
+    padding-top:20px; 
+    padding-left:15px; 
+    padding-right:15px;
+} 
+#st-box { 
+    float:left; 
+    width:180px; 
+    height:160px; 
+    background-color:white; 
+} 
+#nd-box { 
+    float:left; 
+    width:180px; 
+    height:160px; 
+    background-color:white;  
+    margin-left:450px; 
+} 
+#rd-box { 
+    float:right;
+    margin-right: 100px;
+    width:180px; 
+    height:160px; 
+    background-color:white; 
+} 
+/* text elements */
+h1.h1_text {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: overline solid rgb(68, 68, 68);
+}
+
+h1.logo {
+    color: white;
+    text-shadow: 2px 2px 2px darkgray;
+    font-size: 50px;
+    margin-top: -50px;
+}
+
+p.text {
+    font-size: 25px;
+    padding: 8px;
+    color: lightgray;
+}
+/* nav */
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    overflow: hidden;
+    width: 506px;
+    font-family: "Muli";
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  /* nav anim */
+.active {
+    background-color: #4CAF50;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+    transition: .5s;
+}
+
+/* links */
+a.link {
+    background-color: #1d2d50;
+    box-shadow: 0 5px 0 #162036;
+    color: white;
+    padding: 1em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.website_link {
+    background-color: #1d2d50;
+    box-shadow: 0 5px 0 #162036;
+    color: white;
+    padding: 1em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    background-color: #133b5c;
+    cursor: pointer;
+}
+
+a:active {
+    box-shadow: none;
+    top: 5px;
+}
+
+/* img */
+img.thumbnail {
+    border: 5px solid #1d2d50;
+    box-shadow: 0px 4px 20px -6px rgba(0,0,0,0.75);
+}
+
+/* media */
+@media (max-width: 700px) {
+    
+    div.nav {
+        margin-left: 350px;
+    }
+
+    div.header_div {
+        width: 860px;
+    }
+
+    div.body_div {
+        width: 700px;
+        text-align: center;
+    }
+
+    div.right_div {
+        margin-top: 50px;
+        margin-right: -300px;
+        text-align: center;
+    }
+
+ }

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title>Homepage | Quintupple</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Language', 'Experience'],
+            ['HTML', 13],
+            ['CSS', 10],
+            ['JavaScript', 2],
+            ['Java', 10],
+            ['C#', 8]
+        ]);
+
+        var options = { 'is3D': true, backgroundColor: 'transparent', 'width': 500, 'height': 250 };
+
+        var chart = new google.visualization.PieChart(document.getElementById('right_div'));
+        chart.draw(data, options);
+    }
+</script>
+
+<body>
+    <div class="header_div">
+        <!-- header div -->
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+    <div class="logo_div">
+        <h1 class="logo">
+            Quintupple
+        </h1>
+    </div>
+    <div class="body_div">
+        <h1 class="h1_text">
+            ABOUT ME
+        </h1>
+        <p class="text">
+            My name is <b>Quintupple</b> and I'm a web designer from Herefordshire, UK. I'm a student at college
+            currently
+            taking BTEC IT, BTEC Computer Games Development and Cyber Security, and A Level Sociology.
+        </p>
+        <p class="text">
+            I have been making websites for over 2 years, and programming in other languages for 3.
+        </p>
+    </div>
+    <div class="right_div">
+        <h1 class="h1_text">
+            Languages
+        </p>
+        <div id="right_div"></div>
+        <noscript>
+            <p class="text">You must have javascript enabled for the pie chart to show!</p>
+        </noscript>
+    </div>
+</body>
+
+</html>
