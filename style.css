@@ -44,11 +44,11 @@ div.body_div {
 }
 
 div.right_div {
-    width: 500px;
+    width: min-content;
     height: min-content;
     float: right;
     margin-right: 50px;
-    margin-top: -320px;
+    margin-top: -500px;
 }
 
 .container { 
@@ -140,6 +140,12 @@ li a:hover, .dropdown:hover .dropbtn {
     transition: .5s;
 }
 
+a {
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+}
+
 /* links */
 a.link {
     background-color: #1d2d50;
@@ -149,6 +155,7 @@ a.link {
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 a.website_link {
@@ -161,7 +168,11 @@ a.website_link {
     text-transform: uppercase;
 }
 
-a:hover {
+a.link:hover {
+    background-color: #133b5c;
+    cursor: pointer;
+}
+a.website_link:hover {
     background-color: #133b5c;
     cursor: pointer;
 }
@@ -175,28 +186,84 @@ a:active {
 img.thumbnail {
     border: 5px solid #1d2d50;
     box-shadow: 0px 4px 20px -6px rgba(0,0,0,0.75);
+    width:500px;
 }
 
 /* media */
 @media (max-width: 700px) {
     
+    /* mobiles */
+
+    body {
+        width: 140px;
+    }
+
     div.nav {
-        margin-left: 350px;
+        margin-top: 120px;
+        margin-left: -140px;
+    }
+
+    div.logo_div {
+        margin-top: -150px;
     }
 
     div.header_div {
-        width: 860px;
+        width: auto;
     }
+
+    /* home page */
 
     div.body_div {
         width: 700px;
         text-align: center;
+        width: 280px;
     }
 
     div.right_div {
-        margin-top: 50px;
-        margin-right: -300px;
-        text-align: center;
+        display: none;
     }
 
+    ul {
+        width: 340px;
+        margin-left: 150px;
+        font-size: 20px;
+    }
+
+    /* portfolio page */
+
+    img.thumbnail {
+        width: 300px;
+    }
+
+    .container { 
+        width: 330px; 
+        height:1550px; 
+        padding-top:20px; 
+        padding-left:15px; 
+        padding-right:15px;
+    } 
+    #st-box { 
+        float:left; 
+        width:180px; 
+        margin-top: 50px;
+        height:160px; 
+        background-color:white; 
+    }
+    #nd-box { 
+        float:left; 
+        width:180px; 
+        height:160px; 
+        margin-top: 500px;
+        background-color:white;  
+        margin-left:-180px; 
+    } 
+    #rd-box { 
+        float:right;
+        margin-right: 100px;
+        width:180px; 
+        height:160px; 
+        margin-top: 750px;
+        margin-right: 150px;
+        background-color:white; 
+    } 
  }
